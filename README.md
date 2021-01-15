@@ -1,7 +1,9 @@
 # vue-drag-resize-rotate
-It's complicate to publish this version to npm, so just copy it to your own project and use it
+It's complicate to publish this component to npm, so just copy it to your own project and use it
 
 based on kirillmurashov vue-drag-resize, makes a extension  "rotate"
+
+#### the Origin: https://github.com/kirillmurashov/vue-drag-resize
 
 added rotate Function to it, the icon is using element-ui's.
 
@@ -9,11 +11,7 @@ the original repository's dependencies are soooo old ,which makes me cannot writ
 
 so I decided to create a new repository
 
-#### the Origin: https://github.com/kirillmurashov/vue-drag-resize
-
-(this component is soooooooo good)
-
-
+the added function is marked with  "added"
 
 Use the component:
 
