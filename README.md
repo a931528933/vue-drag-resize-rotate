@@ -18,7 +18,7 @@ Use the component:
 ```vue
 <template>
     <div id="app">
-        <VueDragResizeRotate :isActive="true" :w="200" :h="200" v-on:resizing="resize" v-on:dragging="resize">
+        <VueDragResizeRotate :isActive="true" :w="200" :h="200" :deg="deg" :rotate=rotatable v-on:resizing="resize" v-on:dragging="resize" v-on:rotate="rotate">
             <h3>Hello World!</h3>
             <p>{{ top }} х {{ left }} </p>
             <p>{{ width }} х {{ height }}</p>
@@ -41,7 +41,9 @@ Use the component:
                 width: 0,
                 height: 0,
                 top: 0,
-                left: 0
+                left: 0,
+                deg: 0,
+                rotatable: true
             }
         },
 
@@ -51,6 +53,9 @@ Use the component:
                 this.height = newRect.height;
                 this.top = newRect.top;
                 this.left = newRect.left;
+            },
+            rotate(deg) {
+                this.deg = deg
             }
         }
     }
