@@ -398,7 +398,7 @@ Defines a class that is applied on the div with the class vdr
 
 ### Events added
 
-#### clicked
+#### rotate
 
 Required: `false`<br>
 Parameters: `-`
